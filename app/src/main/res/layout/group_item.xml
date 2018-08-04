@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">>
+    <!--to change later-->
+
+    <TextView
+        android:id="@+id/groupViewName"
+        android:text="groupname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/addViewbutton"
+        android:text="Add"
+        android:minWidth="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/removeViewbutton"
+        android:backgroundTint="#ff77b300"
+        />
+
+    <Button
+        android:id="@+id/removeViewbutton"
+        android:text="Remove"
+        android:minWidth="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/leaveViewbutton"
+        android:backgroundTint="#fff4a341"
+        />
+
+    <Button
+        android:id="@+id/leaveViewbutton"
+        android:text="Leave"
+        android:minWidth="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#ffff704d"
+        />
+
+</RelativeLayout>

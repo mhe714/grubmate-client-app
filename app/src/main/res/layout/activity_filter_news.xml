@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="filter.FilterNewsActivity">
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignBottom="@+id/categories"
+        android:layout_toRightOf="@+id/categories"
+        android:layout_toEndOf="@+id/categories"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_date"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM DATE"
+        android:id="@+id/btn_from_date"
+        android:layout_alignBottom="@+id/from_date"
+        android:layout_toRightOf="@+id/from_date"
+        android:layout_toEndOf="@+id/from_date" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_time"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/from_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM TIME"
+        android:id="@+id/btn_from_time"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btn_from_date"
+        android:layout_alignLeft="@+id/btn_from_date"
+        android:layout_alignStart="@+id/btn_from_date" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_date"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/from_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO DATE"
+        android:id="@+id/btn_to_date"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/btn_from_time"
+        android:layout_alignLeft="@+id/btn_from_time"
+        android:layout_alignStart="@+id/btn_from_time" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_time"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/to_date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO TIME"
+        android:id="@+id/btn_to_time"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/btn_to_date"
+        android:layout_alignLeft="@+id/btn_to_date"
+        android:layout_alignStart="@+id/btn_to_date" />
+
+    <Button
+        android:id="@+id/filterbutton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="Filter Now!"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/to_time"
+        />
+
+    <Button
+        android:id="@+id/sortbutton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="Sort by provider ratings"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/filterbutton"
+        />
+
+
+</RelativeLayout>
